@@ -375,21 +375,21 @@ window.SITE_DATA = {
       "id": "astro",
       "title": "مسابقه نجوم",
       "subtitle": "المپیاد نجوم و اختر فیزیک",
-      "img": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=900&h=600&fit=crop&auto=format",
+      "img": "./pic/nojom.jpg",
       "date": null
     },
     {
       "id": "lab",
       "title": "مسابقه علوم آزمایشگاهی",
       "subtitle": "آزمایش‌های عملی و تحلیلی",
-      "img": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=900&h=600&fit=crop&auto=format",
+      "img": "./pic/az.jpg",
       "date": null
     },
     {
       "id": "code",
       "title": "مسابقه برنامه‌نویسی",
       "subtitle": "حل مسئله و الگوریتم",
-      "img": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=900&h=600&fit=crop&auto=format",
+      "img": "./pic/barnam.jpg",
       "date": null
     }
   ]
