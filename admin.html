@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>پنل مدیریت | پژوهشسرا شهید احدی</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- مسیر این دو خط را با پوشه‌های خودت عوض کن -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/admin.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="container tb">
+    <strong>پنل مدیریت پژوهشسرا</strong>
+    <span id="status" role="status"></span>
+    <div class="actions">
+      <button class="btn ghost" id="btn-preview" type="button">پیش‌نمایش سایت</button>
+      <button class="btn ghost" id="btn-import" type="button">وارد کردن data.js</button>
+      <button class="btn ghost" id="btn-reset" type="button">بازگشت به نسخه منتشرشده</button>
+      <button class="btn" id="btn-download" type="button">دانلود data.js</button>
+    </div>
+    <input type="file" id="file" accept=".js,.txt" hidden>
+  </div>
+</div>
+
+<div class="container">
+  <p class="help">تغییرات خودکار در همین مرورگر ذخیره می‌شن. برای منتشر کردن روی سایت، «دانلود data.js» رو بزن و فایل دانلودشده رو جای <bdi>data.js</bdi> روی هاست بذار.</p>
+  <nav class="atabs" id="tabs">
+    <button type="button" data-tab="courses" class="active">دوره‌ها</button>
+    <button type="button" data-tab="schedule">برنامه هفتگی</button>
+    <button type="button" data-tab="competitions">مسابقات</button>
+  </nav>
+  <div id="panel"></div>
+</div>
+
+<script src="./js/data.js"></script>
+<script src="./js/admin.js"></script>
+</body>
+</html>

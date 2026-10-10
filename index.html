@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>پژوهشسرا شهید احدی</title>
+  <meta name="description" content="مرکزی برای پرورش استعدادهای علمی دانش‌آموزان در شهر ملایر">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<header id="site-header">
+  <div class="container bar">
+    <a class="brand" href="#home"><span class="logo" aria-hidden="true">پ</span><strong>پژوهشسرا شهید احدی</strong></a>
+
+    <nav id="main-nav" aria-label="منوی اصلی">
+      <a href="#home" data-page="home">خانه</a>
+      <a href="#schedule" data-page="schedule">برنامه</a>
+      <a href="#home/courses">دوره‌ها</a>
+      <a href="#home/competitions">مسابقات</a>
+      <a href="#home/about">درباره ما</a>
+    </nav>
+
+    <div class="search">
+      <input id="search-input" type="search" placeholder="جستجو…" autocomplete="off" aria-label="جستجو در سایت">
+      <ul id="search-results" role="listbox"></ul>
+    </div>
+
+    <button id="menu-toggle" aria-label="باز و بسته کردن منو" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+  <!-- ═════════ صفحه خانه ═════════ -->
+  <div id="page-home">
+    <section class="hero container">
+      <p class="kicker">مرکز علمی و پژوهشی</p>
+      <h1>پژوهشسرا<br><span class="accent">شهید احدی</span></h1>
+      <p class="lead">بستری برای پرورش استعدادهای علمی دانش‌آموزان در حوزه‌های نجوم، فناوری، آزمایشگاه و علوم کامپیوتر</p>
+      <div class="actions">
+        <a class="btn" href="#home/courses">مشاهده دوره‌ها</a>
+        <a class="btn btn-ghost" href="#schedule">برنامه هفتگی</a>
+      </div>
+      <dl class="stats">
+        <div><dt>دوره تخصصی</dt><dd>۵</dd></div>
+        <div><dt>مسابقه علمی</dt><dd>۳</dd></div>
+        <div><dt>دانش‌آموز فعال</dt><dd>۲۰۰+</dd></div>
+        <div><dt>سال سابقه</dt><dd>۱۰+</dd></div>
+      </dl>
+    </section>
+
+    <section class="container" id="today">
+      <h2>برنامه امروز</h2>
+      <p class="sub" id="today-date"></p>
+      <div class="grid cols-4" id="today-cards"></div>
+      <div class="center"><a class="btn btn-ghost" href="#schedule">مشاهده برنامه هفتگی کامل</a></div>
+    </section>
+
+    <section id="about" class="band">
+      <div class="container split">
+        <div class="prose">
+          <h2 class="start">اهداف پژوهشسرا</h2>
+          <p>پژوهش‌سرای شهید احدی با هدف پرورش استعدادهای علمی دانش‌آموزان در حوزه‌های نجوم، کامپیوتر و آزمایشگاه فعالیت می‌کند.</p>
+          <p>این مرکز با برگزاری دوره‌های تخصصی، بستری برای یادگیری عملی و کاربردی علوم فراهم می‌کند. مسابقات علمی هم فرصتی برای محک زدن مهارت‌ها و رقابت سالم است.</p>
+          <p>پژوهش‌سرا می‌کوشد پلی میان علاقه‌ی نوجوانان به علم و مسیر تحصیلی و شغلی آینده‌شان بسازد.</p>
+        </div>
+        <div class="grid cols-2" id="goal-cards"></div>
+      </div>
+    </section>
+
+    <section class="container" id="courses">
+      <h2>دوره‌های تخصصی</h2>
+      <p class="sub">دوره‌های علمی برای رشد و پیشرفت دانش‌آموزان</p>
+      <div class="grid cols-3" id="course-cards"></div>
+    </section>
+
+    <section id="competitions" class="band">
+      <div class="container">
+        <h2>مسابقات علمی</h2>
+        <p class="sub">رقابت‌های علمی برای رشد و کشف توانایی‌های دانش‌آموزان</p>
+        <div class="grid cols-3" id="competition-cards"></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═════════ صفحه برنامه هفتگی ═════════ -->
+  <div id="page-schedule" hidden>
+    <section class="container schedule-head">
+      <p class="crumbs"><a href="#home">خانه</a> ‹ برنامه هفتگی</p>
+      <div class="between">
+        <div>
+          <h1 class="h1-small">برنامه هفتگی</h1>
+          <p class="sub start">پژوهشسرا شهید احدی — هفته جاری</p>
+        </div>
+        <div class="today-badge"><span class="dot" aria-hidden="true"></span>
+          <div><small>امروز</small><strong id="badge-date"></strong></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="tabs-bar">
+      <div class="container between">
+        <div class="tabs" id="day-tabs" role="tablist"></div>
+        <div class="view-switch" id="view-switch">
+          <button type="button" data-view="grid">کارت</button>
+          <button type="button" data-view="list">لیست</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="container">
+      <div class="between">
+        <div>
+          <h2 class="start" id="day-title"></h2>
+          <p class="sub start" id="day-subtitle"></p>
+        </div>
+        <div class="actions">
+          <button class="square" id="day-next" aria-label="روز بعد">›</button>
+          <button class="square" id="day-prev" aria-label="روز قبل">‹</button>
+        </div>
+      </div>
+      <div id="session-list" class="grid cols-4"></div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div><strong>پژوهشسرا شهید احدی</strong><p>مرکزی برای پرورش استعدادهای علمی دانش‌آموزان در شهر ملایر</p></div>
+    <div><strong>بخش‌ها</strong>
+      <a href="#home">خانه</a><a href="#home/courses">دوره‌ها</a>
+      <a href="#home/competitions">مسابقات</a><a href="#home/about">درباره ما</a>
+    </div>
+    <div><strong>ارتباط با ما</strong>
+      <p>همدان — ملایر — میدان دکتر بابک — ورودی بلوار سیفیه — دبیرستان شهید احدی</p>
+      <p><bdi dir="ltr">0918 215 7378</bdi></p>
+    </div>
+  </div>
+  <p class="copyright">© ۱۴۰۵ پژوهشسرا شهید احدی — تمام حقوق محفوظ است</p>
+</footer>
+
+<dialog id="info-dialog">
+  <h3 id="info-title"></h3>
+  <p id="info-text"></p>
+  <button class="btn" id="info-close" type="button">بستن</button>
+</dialog>
+<script src="./js/data.js"></script>
+<script src="./preview.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>

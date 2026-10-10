@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مسابقات علمی | پژوهشسرا شهید احدی</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- مسیر این سه خط نسبت به همین فایل است؛ با پوشه‌های خودت عوض کن -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/competitions.css">
+</head>
+<body>
+
+<header id="site-header" class="scrolled">
+  <div class="container bar">
+    <a class="brand" href="index.html#home"><span class="logo" aria-hidden="true">پ</span><strong>پژوهشسرا شهید احدی</strong></a>
+    <nav id="main-nav" aria-label="منوی اصلی">
+      <a href="index.html#home">خانه</a>
+      <a href="index.html#schedule">برنامه</a>
+      <a href="index.html#home/courses">دوره‌ها</a>
+      <a href="competitions.html" class="active">مسابقات</a>
+      <a href="index.html#home/about">درباره ما</a>
+    </nav>
+    <button id="menu-toggle" aria-label="باز و بسته کردن منو" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="comp-hero">
+    <div class="container">
+      <p class="crumbs"><a href="index.html#home">خانه</a> ‹ مسابقات</p>
+      <h1>مسابقات علمی</h1>
+      <p class="lead">رقابت‌های علمی برای رشد و کشف توانایی‌های دانش‌آموزان</p>
+    </div>
+  </section>
+
+  <section class="container next-wrap" aria-labelledby="next-title">
+    <h2 id="next-title" class="start">نزدیک‌ترین مسابقه</h2>
+    <div id="next-comp"></div>
+  </section>
+
+  <section class="container list-wrap" aria-labelledby="all-title">
+    <div class="between">
+      <h2 id="all-title" class="start">همه مسابقات</h2>
+      <div class="filters" id="filters" role="group" aria-label="فیلتر مسابقات">
+        <button type="button" data-filter="all" class="active">همه</button>
+        <button type="button" data-filter="upcoming">پیش‌رو</button>
+        <button type="button" data-filter="past">برگزارشده</button>
+      </div>
+    </div>
+    <div class="grid cols-3" id="comp-grid"></div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container cta">
+      <div><h2 class="start">برای ثبت‌نام در مسابقات</h2><p>با پژوهشسرا تماس بگیرید تا شرایط شرکت و زمان‌بندی را بدانید.</p></div>
+      <a class="btn" href="tel:09182157378" dir="ltr">0918 215 7378</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div><strong>پژوهشسرا شهید احدی</strong><p>مرکزی برای پرورش استعدادهای علمی دانش‌آموزان در شهر ملایر</p></div>
+    <div><strong>بخش‌ها</strong>
+      <a href="index.html#home">خانه</a><a href="index.html#schedule">برنامه هفتگی</a>
+      <a href="index.html#home/courses">دوره‌ها</a><a href="competitions.html">مسابقات</a><a href="index.html#home/about">درباره ما</a>
+    </div>
+    <div><strong>ارتباط با ما</strong>
+      <p>همدان — ملایر — میدان دکتر بابک — ورودی بلوار سیفیه — دبیرستان شهید احدی</p>
+      <p><bdi dir="ltr">0918 215 7378</bdi></p>
+    </div>
+  </div>
+  <p class="copyright">© ۱۴۰۵ پژوهشسرا شهید احدی — تمام حقوق محفوظ است</p>
+</footer>
+
+<dialog id="info-dialog">
+  <h3 id="info-title"></h3>
+  <div id="info-body"></div>
+  <button class="btn" id="info-close" type="button">بستن</button>
+</dialog>
+<script src="./js/data.js"></script>
+<script src="./js/preview.js"></script>
+<script src="./js/competitions.js"></script>
+</body>
+</html>

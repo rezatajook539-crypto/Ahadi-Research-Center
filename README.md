@@ -1,2 +1,2 @@
-# Ahadi-Research-Center
-Shahid Ahadi Research Center is a government institution established to increase students' connection with sciences such as computers, artificial intelligence, chemistry, physics, biology, and nanotechnology in both theoretical and practical ways.
+# Shahid Ahadi Research Center Website
+A site for Shahid Ahadi Research Center to inform students about the courses, competitions, and goals of this research center.
